@@ -1,13 +1,12 @@
 class Item
-  attr_accessor :title, :author, :category, :publisher, :year, :language, :about
+  attr_accessor :title, :author, :categories, :price, :image_url
 
-  def initialize(title, author, category, publisher, year, language)
+  def initialize(title, author, categories, price, image_url)
     @title = title
     @author = author
-    @category = category 
-    @publisher = publisher
-    @year = year
-    @language = language
+    @categories = categories
+    @price = price
+    @image_url = image_url
   end
 
   def info(&block)
@@ -15,21 +14,20 @@ class Item
   end
 
   def to_s
-    "#{@title} (#{@year}) by #{@author} publisher: #{@publisher}"
+    "#{@title} by #{@author}: #{@price}"
   end
-    
+
   def to_h
   {
     title: @title,
     author: @author,
-    category: @category,
-    publisher: @publisher,
-    year: @year,
-    language: @language,
+    categories: @categories,
+    price: @price,
+    image_url: @image_url
   }
   end
 
   def <=>(other)
     title <=> other.title
   end
-end 
+end

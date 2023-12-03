@@ -1,0 +1,115 @@
+{
+  "items": [
+    {
+      "title": "Книга Я бачу, вас цікавить пітьма",
+      "author": "Ілларіон Павлюк",
+      "categories": [
+        "Психологічний трилер",
+        "Вибір читачів",
+        "Детективи",
+        "Пригодницькі романи",
+        "Трилери",
+        "Українська література",
+        "Фантастика"
+      ],
+      "price": 500,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img_67890_1.jpg"
+    },
+    {
+      "title": "Книга Кафе на краю світу",
+      "author": "Джон П. Стрелекі",
+      "categories": [
+        "Мета. Мрія",
+        "Мотивація",
+        "Успіх",
+        "Сучасна проза",
+        "Книги про натхнення",
+        "Книги для натхнення",
+        "Книги для розвитку креативності",
+        "Практичні книги"
+      ],
+      "price": 171,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img_5185.jpg"
+    },
+    {
+      "title": "Електронна книга Тіні забутих предків",
+      "author": "Михайло Коцюбинський",
+      "categories": [
+        "Класична проза"
+      ],
+      "price": 1,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/c/o/cover_600_800-58.jpg"
+    },
+    {
+      "title": "Електронна книга Я бачу, Вас цікавить пітьма",
+      "author": "Ілларіон Павлюк",
+      "categories": [
+        "Психологічний трилер",
+        "Вибір читачів"
+      ],
+      "price": 250,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/y/a/ya_bachu_vas_cikavytj_pitjma_cover_full.jpg"
+    },
+    {
+      "title": "Книга 1984",
+      "author": "Джордж Орвелл",
+      "categories": [
+        "Фантастика",
+        "Антиутопія",
+        "Книги антиутопії для підлітків",
+        "Книги жанру \"Антиутопія\"",
+        "Вибір читачів"
+      ],
+      "price": 140,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/2/6/26_1_329.jpg"
+    },
+    {
+      "title": "Книга Молоко і мед",
+      "author": "Рупі Каур",
+      "categories": [
+        "Любовна. Лірична"
+      ],
+      "price": 270,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img068_2_130_1.jpg"
+    },
+    {
+      "title": "Книга Задивляюсь у твої зіниці",
+      "author": "Василь Симоненко",
+      "categories": [
+        "Любовна. Лірична",
+        "Поезія"
+      ],
+      "price": 300,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/6/6/66_1_15.jpg"
+    },
+    {
+      "title": "Книга Вечірка на Гелловін (Привиди у Венеції)",
+      "author": "Агата Крісті",
+      "categories": [
+        "Британський детектив",
+        "Приватні детективи",
+        "Кіноромани і екранізації",
+        "Класична проза",
+        "Світова література",
+        "Детективи",
+        "Трилери"
+      ],
+      "price": 250,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/m/i/microsoftteams-image_6_.png"
+    },
+    {
+      "title": "Книга Білий попіл",
+      "author": "Ілларіон Павлюк",
+      "categories": [
+        "Містичний детектив",
+        "Містичний трилер",
+        "Сучасна проза",
+        "Сучасна проза",
+        "Вибір читачів",
+        "Детективи"
+      ],
+      "price": 250,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img371_2_18.jpg"
+    }
+  ]
+}
