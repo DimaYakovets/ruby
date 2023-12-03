@@ -20,12 +20,12 @@ class Item
     
   def to_h
   {
-    title: @title
-    author: @author
-    category: @category 
-    publisher: @publisher
-    year: @year
-    language: @language
+    title: @title,
+    author: @author,
+    category: @category,
+    publisher: @publisher,
+    year: @year,
+    language: @language,
   }
   end
 
