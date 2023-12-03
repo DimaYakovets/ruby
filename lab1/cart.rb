@@ -29,7 +29,7 @@ class Cart
 
   def save_to_csv()
     CSV.open("#{Program.path}/items.csv", "w") do |csv|
-      csv << [] 
+      csv << ["title", "author", "categories", "price", "image_url"] 
       @items.each do |item|
         csv << item.to_h.values
       end
