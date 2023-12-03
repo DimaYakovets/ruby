@@ -1,6 +1,6 @@
-module Program
+module Config
     class << self
-        attr_accessor :web_address, :path, :file_ext, :condition, :user
+        attr_accessor :web_address, :path, :condition, :user
         
         def config
             return to_s unless block_given?

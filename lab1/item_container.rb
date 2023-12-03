@@ -4,15 +4,6 @@ module ItemContainer
     instance.include InstanceMethods
   end
 
-  include Enumerable
-
-  def each 
-    return unless block_given?
-    @items.each do |item|
-        yield item
-    end  
-  end
-
   module ClassMethods 
   
   end 

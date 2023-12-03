@@ -1,4 +1,5 @@
-module Program
+module Yakovets_Tsyhanash
+module Config
     class << self
         attr_accessor :web_address, :path, :file_ext, :condition, :user
         
@@ -36,4 +37,5 @@ module Program
             end
         end
     end
+end
 end

@@ -26,8 +26,4 @@ class Item
     image_url: @image_url
   }
   end
-
-  def <=>(other)
-    title <=> other.title
-  end
 end

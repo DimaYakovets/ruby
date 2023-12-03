@@ -1,4 +1,6 @@
 require_relative 'main_application'
 
-app = MainApplication.new
-app.run
+module Yakovets_Tsyhanash
+  app = MainApplication.new
+  app.run
+end

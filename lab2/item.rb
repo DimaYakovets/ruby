@@ -1,33 +1,37 @@
-class Item
-  attr_accessor :title, :author, :categories, :price, :image_url
+module Yakovets_Tsyhanash
+  class Item
+    attr_accessor :title, :author, :categories, :price, :image_url
 
-  def initialize(title, author, categories, price, image_url)
-    @title = title
-    @author = author
-    @categories = categories
-    @price = price
-    @image_url = image_url
-  end
+    include Comparable
 
-  def info(&block)
-    yield self if block_given?
-  end
+    def initialize(title, author, categories, price, image_url)
+      @title = title
+      @author = author
+      @categories = categories
+      @price = price
+      @image_url = image_url
+    end
 
-  def to_s
-    "#{@title} by #{@author}: #{@price}"
-  end
+    def info(&block)
+      yield self if block_given?
+    end
 
-  def to_h
-  {
-    title: @title,
-    author: @author,
-    categories: @categories,
-    price: @price,
-    image_url: @image_url
-  }
-  end
+    def to_s
+      "#{@title} by #{@author}: #{@price}"
+    end
 
-  def <=>(other)
-    title <=> other.title
+    def to_h
+    {
+      title: @title,
+      author: @author,
+      categories: @categories,
+      price: @price,
+      image_url: @image_url
+    }
+    end
+
+    def <=>(other)
+      title <=> other.title
+    end
   end
 end
