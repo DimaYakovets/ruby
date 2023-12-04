@@ -5,7 +5,7 @@ require_relative 'item'
 
 module Yakovets_Tsyhanash
   class MainApplication
-    def run
+    def run(prefix)
       cart = Cart.new
       parser = Parser.new
       
@@ -19,10 +19,22 @@ module Yakovets_Tsyhanash
         end
       end
 
-      cart.save_to_json
-      cart.save_to_csv
-      cart.save_to_file
-      cart.save_to_yaml
+      Config.file_ext.each do |ext|
+        case ext
+        when ".txt"
+          cart.save_to_file prefix
+        when ".csv"
+          cart.save_to_csv prefix
+        when ".json"
+          cart.save_to_json prefix
+        when ".yaml"
+          cart.save_to_yaml prefix
+        else
+          puts "Unknown format"
+        end
+      end
+
+      Yakovets_Tsyhanash::Zipper.create_archive prefix
     end
   end
 end

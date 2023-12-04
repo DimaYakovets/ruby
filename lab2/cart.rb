@@ -13,8 +13,8 @@ module Yakovets_Tsyhanash
       @items = []
     end
     
-    def save_to_file()
-      File.open("#{Config.path}/items.txt", "w") do |file|
+    def save_to_file(prefix)
+      File.open("#{Config.path}/#{prefix}_items.txt", "w") do |file|
       file.puts "Items:"
       
         @items.each do |item|
@@ -23,14 +23,14 @@ module Yakovets_Tsyhanash
       end
     end
   
-    def save_to_json()
-      File.open("#{Config.path}/items.json", "w") do |file|
+    def save_to_json(prefix)
+      File.open("#{Config.path}/#{prefix}_items.json", "w") do |file|
         file.puts JSON.pretty_generate(to_h)
       end
     end
 
-    def save_to_csv()
-      CSV.open("#{Config.path}/items.csv", "w") do |csv|
+    def save_to_csv(prefix)
+      CSV.open("#{Config.path}/#{prefix}_items.csv", "w") do |csv|
         csv << ["title", "author", "categories", "price", "image_url"] 
         @items.each do |item|
           csv << item.to_h.values
@@ -38,8 +38,8 @@ module Yakovets_Tsyhanash
       end
     end
 
-    def save_to_yaml
-      File.open("#{Config.path}/data.yaml", "w") do |file|
+    def save_to_yaml(prefix)
+      File.open("#{Config.path}/#{prefix}_data.yaml", "w") do |file|
         file.puts YAML.dump(to_h)
       end 
     end

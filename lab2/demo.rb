@@ -1,6 +1,6 @@
-require_relative 'main_application'
+require_relative 'engine'
 
 module Yakovets_Tsyhanash
-  app = MainApplication.new
-  app.run
+  engine = Yakovets_Tsyhanash::Engine.new
+  engine.run
 end
