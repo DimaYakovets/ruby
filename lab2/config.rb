@@ -1,7 +1,7 @@
 module Yakovets_Tsyhanash
     module Config
         class << self
-            attr_accessor :web_address, :validator, :data_path, :parse_item, :file_ext, :condition, :user
+            attr_accessor :web_address, :validator, :data_path, :parse_item, :file_ext, :condition, :user, :email_to_send, :email_subject, :email_body
             
             def config
                 return to_s unless block_given?

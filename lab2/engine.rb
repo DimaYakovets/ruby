@@ -5,6 +5,7 @@ require_relative 'cart'
 require_relative 'item'
 require_relative 'main_application'
 require 'thread'
+require 'fileutils'
 
 module Yakovets_Tsyhanash
   class Engine
@@ -27,6 +28,12 @@ module Yakovets_Tsyhanash
 
           puts "Task #{index} finished"
         end
+      end
+
+      Dir.foreach(Config.data_path) do |file|
+        path = File.join(Config.data_path, file)
+
+        File.delete(path) if file != '.' && file != '..'
       end
 
       begin

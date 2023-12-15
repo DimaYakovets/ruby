@@ -7,7 +7,7 @@ module Yakovets_Tsyhanash
         def send_email(path_to_zip_file, file_name) 
           begin
             Pony.mail({ 
-            :to => 'yakovets.dima19@gmail.com', 
+            :to => Config.email_to_send, 
             :via => :smtp, 
             :via_options => { 
               :address              => 'smtp.gmail.com', 
@@ -18,8 +18,8 @@ module Yakovets_Tsyhanash
               :authentication       => :plain,
               :domain               => "gmail.com"
             }, 
-            :subject => 'Subject', 
-            :body => 'Body', 
+            :subject => Config.email_subject, 
+            :body => Config.email_body, 
             :attachments => {"#{file_name}" => File.read(path_to_zip_file)} 
           })  
           rescue Net::ReadTimeout => e
