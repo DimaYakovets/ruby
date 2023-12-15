@@ -3,14 +3,19 @@ require 'zip'
 module Yakovets_Tsyhanash
   class Zipper
     class << self
-      def create_archive(prefix)
-        entries = Dir.entries(Config::path) - %w[. ..] 
+      def create_archive(index)
+        files = Dir.entries(Config.data_path) - %w[. ..] 
 
-        Zip::File.open "#{Config::path}/#{prefix}_data.zip", create: true do |file|
-          entries.each do |entry|
-            entry_path = File.join(Config::path, entry)
+        zip_path = "#{Config.data_path}/#{index}_data.zip"
+                
+        File.delete(zip_path) if File.file?(zip_path) 
+        
+        Zip::File.open zip_path, create: true do |zip|
+          files.each do |file|
+
+            path = File.join(Config.data_path, file)
             
-            file.add(entry, entry_path) if File.file?(entry_path)
+            zip.add(file, path) if File.file?(path) && file.start_with?("#{index}_")
           end
         end
       end

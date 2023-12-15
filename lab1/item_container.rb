@@ -23,7 +23,7 @@ module ItemContainer
 
     def to_h
       {
-        items: @items.map(&:to_h), 
+        items: @items.map { |item| item.to_h }, 
       }
     end
     

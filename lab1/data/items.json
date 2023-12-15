@@ -12,7 +12,7 @@
         "Українська література",
         "Фантастика"
       ],
-      "price": 500,
+      "price": 491,
       "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img_67890_1.jpg"
     },
     {
@@ -32,25 +32,6 @@
       "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img_5185.jpg"
     },
     {
-      "title": "Електронна книга Тіні забутих предків",
-      "author": "Михайло Коцюбинський",
-      "categories": [
-        "Класична проза"
-      ],
-      "price": 1,
-      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/c/o/cover_600_800-58.jpg"
-    },
-    {
-      "title": "Електронна книга Я бачу, Вас цікавить пітьма",
-      "author": "Ілларіон Павлюк",
-      "categories": [
-        "Психологічний трилер",
-        "Вибір читачів"
-      ],
-      "price": 250,
-      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/y/a/ya_bachu_vas_cikavytj_pitjma_cover_full.jpg"
-    },
-    {
       "title": "Книга 1984",
       "author": "Джордж Орвелл",
       "categories": [
@@ -64,38 +45,48 @@
       "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/2/6/26_1_329.jpg"
     },
     {
-      "title": "Книга Молоко і мед",
-      "author": "Рупі Каур",
+      "title": "Електронна книга Тіні забутих предків",
+      "author": "Михайло Коцюбинський",
       "categories": [
-        "Любовна. Лірична"
+        "Класична проза"
       ],
-      "price": 270,
-      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img068_2_130_1.jpg"
+      "price": 1,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/c/o/cover_600_800-58.jpg"
     },
     {
-      "title": "Книга Задивляюсь у твої зіниці",
-      "author": "Василь Симоненко",
+      "title": "Книга Покинь якщо кохаєш",
+      "author": "Коллін Гувер",
       "categories": [
-        "Любовна. Лірична",
-        "Поезія"
-      ],
-      "price": 300,
-      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/6/6/66_1_15.jpg"
-    },
-    {
-      "title": "Книга Вечірка на Гелловін (Привиди у Венеції)",
-      "author": "Агата Крісті",
-      "categories": [
-        "Британський детектив",
-        "Приватні детективи",
-        "Кіноромани і екранізації",
-        "Класична проза",
+        "Сучасна проза",
         "Світова література",
-        "Детективи",
-        "Трилери"
+        "Книги про кохання",
+        "Книги про токсичні стосунки і насилля"
+      ],
+      "price": 290,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img099_1_98.jpg"
+    },
+    {
+      "title": "Електронна книга Я бачу, Вас цікавить пітьма",
+      "author": "Ілларіон Павлюк",
+      "categories": [
+        "Психологічний трилер",
+        "Вибір читачів"
       ],
       "price": 250,
-      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/m/i/microsoftteams-image_6_.png"
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/y/a/ya_bachu_vas_cikavytj_pitjma_cover_full.jpg"
+    },
+    {
+      "title": "Книга Гаррі Поттер і філософський камінь",
+      "author": "Джоан Роулінг",
+      "categories": [
+        "Фентезі",
+        "Література",
+        "Фентезі",
+        "Епічне фентезі",
+        "Вибір читачів"
+      ],
+      "price": 950,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/6/3/630345_front.jpg"
     },
     {
       "title": "Книга Білий попіл",
@@ -110,6 +101,16 @@
       ],
       "price": 250,
       "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/i/m/img371_2_18.jpg"
+    },
+    {
+      "title": "Книга Бог завжди подорожує інкогніто",
+      "author": "Лоран Гунель",
+      "categories": [
+        "Сучасна проза",
+        "Вибір читачів"
+      ],
+      "price": 234,
+      "image_url": "https://static.yakaboo.ua/media/cloudflare/product/webp/600x840/6/7/67_1_37.jpg"
     }
   ]
 }

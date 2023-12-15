@@ -1,15 +1,12 @@
 module Yakovets_Tsyhanash
   class Item
-    attr_accessor :title, :author, :categories, :price, :image_url
-
     include Comparable
 
-    def initialize(title, author, categories, price, image_url)
-      @title = title
-      @author = author
-      @categories = categories
-      @price = price
-      @image_url = image_url
+    def initialize(attrs = {})
+      attrs.each do |key, value|
+        self.instance_variable_set "@#{key}", value
+        self.class.send(:attr_accessor, key)
+      end
     end
 
     def info(&block)
@@ -17,17 +14,21 @@ module Yakovets_Tsyhanash
     end
 
     def to_s
-      "#{@title} by #{@author}: #{@price}"
+      attributes = instance_variables.map do |var|
+        "#{var.to_s[1..-1]}: #{instance_variable_get(var)}"
+      end
+
+      attributes.join("\n")
     end
 
     def to_h
-    {
-      title: @title,
-      author: @author,
-      categories: @categories,
-      price: @price,
-      image_url: @image_url
-    }
+      hash = {}
+
+      instance_variables.each do |var|
+        hash[var.to_s[1..-1]] = instance_variable_get(var)
+      end
+
+      hash
     end
 
     def <=>(other)

@@ -1,13 +1,12 @@
 require 'nokogiri'
 require 'faraday'
 require_relative 'item'
-require_relative 'config'
 
 class Parser
-  def parse_items()
+  def parse_items(page_url, condition)
     items = []
 
-    doc = Nokogiri::HTML(Faraday.get(Config.web_address).body)
+    doc = Nokogiri::HTML(Faraday.get(page_url).body)
     books = doc.css('.category-card.category-layout')
 
     books.each_with_index do |book, index|
@@ -15,7 +14,7 @@ class Parser
       book_url = "https://www.yakaboo.ua" + book.css('.category-card__name').attr('href').text.strip
       item = parse_item(book_url)
 
-      next unless Config.condition.call(item)
+      next unless condition.call(item)
       
       items << item
     end
