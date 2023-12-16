@@ -30,10 +30,12 @@ module Yakovets_Tsyhanash
         end
       end
 
-      Dir.foreach(Config.data_path) do |file|
+      files = Dir.entries(Config.data_path) - %w[. ..] 
+
+      files.each do |file|
         path = File.join(Config.data_path, file)
 
-        File.delete(path) if file != '.' && file != '..'
+        File.delete(path)
       end
 
       begin
