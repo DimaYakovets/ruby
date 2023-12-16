@@ -15,8 +15,6 @@ module Yakovets_Tsyhanash
 		program.user do |user|
 			user.email = "yakovets.dmytro@chnu.edu.ua"
 			user.password = "cacm saug obkg knuq"
-
-			user
 		end
 	end
 end

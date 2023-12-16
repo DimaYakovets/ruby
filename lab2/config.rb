@@ -34,6 +34,8 @@ module Yakovets_Tsyhanash
                     end
                     
                     yield self
+
+                    self
                 end
             end
         end
