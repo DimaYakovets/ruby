@@ -17,9 +17,7 @@ module Yakovets_Tsyhanash
       items.each do |item|
         cart.add_item(item)
         
-        item.info do |item|
-          puts "Added to cart: #{item.title} by #{item.author}: #{item.price}"
-        end
+        puts "Added to cart: #{item.title} by #{item.author}: #{item.price}"
       end
 
       Config.file_ext.each do |ext|

@@ -9,10 +9,6 @@ module Yakovets_Tsyhanash
       end
     end
 
-    def info(&block)
-      yield self if block_given?
-    end
-
     def to_s
       attributes = instance_variables.map do |var|
         "#{var.to_s[1..-1]}: #{instance_variable_get(var)}"

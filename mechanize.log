@@ -121,3 +121,33 @@ I, [2023-12-16T00:13:52.197618 #113836]  INFO -- : status: Net::HTTPOK 1.1 200 O
 I, [2023-12-16T00:13:52.197896 #113836]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html?email=&login=&password=
 I, [2023-12-16T00:13:52.238737 #113836]  INFO -- : status: Net::HTTPOK 1.1 200 OK
 I, [2023-12-16T00:13:52.239171 #113836]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:26:57.953958 #127563]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html
+I, [2023-12-16T10:26:57.954497 #127563]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html
+I, [2023-12-16T10:26:57.955132 #127563]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html
+I, [2023-12-16T10:26:58.085658 #127563]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:26:58.115859 #127563]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:26:58.182447 #127563]  INFO -- : form encoding: utf-8
+I, [2023-12-16T10:26:58.189891 #127563]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:26:58.190338 #127563]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html?email=&login=&password=
+I, [2023-12-16T10:26:58.268713 #127563]  INFO -- : form encoding: utf-8
+I, [2023-12-16T10:26:58.269285 #127563]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html?email=&login=&password=
+I, [2023-12-16T10:26:58.332746 #127563]  INFO -- : form encoding: utf-8
+I, [2023-12-16T10:26:58.333004 #127563]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html?email=&login=&password=
+I, [2023-12-16T10:26:58.999109 #127563]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:26:59.077419 #127563]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:26:59.092439 #127563]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:28:32.579445 #127923]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html
+I, [2023-12-16T10:28:32.580361 #127923]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html
+I, [2023-12-16T10:28:32.580554 #127923]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html
+I, [2023-12-16T10:28:32.671371 #127923]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:28:32.682032 #127923]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:28:32.706642 #127923]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:28:32.778671 #127923]  INFO -- : form encoding: utf-8
+I, [2023-12-16T10:28:32.779657 #127923]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html?email=&login=&password=
+I, [2023-12-16T10:28:32.836669 #127923]  INFO -- : form encoding: utf-8
+I, [2023-12-16T10:28:32.837253 #127923]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html?email=&login=&password=
+I, [2023-12-16T10:28:32.838626 #127923]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:28:32.896945 #127923]  INFO -- : form encoding: utf-8
+I, [2023-12-16T10:28:32.897575 #127923]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-16T10:28:32.898017 #127923]  INFO -- : Net::HTTP::Get: /ua/knigi/hudozhestvennaja-literatura.html?email=&login=&password=
+I, [2023-12-16T10:28:32.939955 #127923]  INFO -- : status: Net::HTTPOK 1.1 200 OK
