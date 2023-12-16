@@ -45,24 +45,27 @@ module Yakovets_Tsyhanash
       end
       
       def method_missing(method, *arguments, &block) 
-        if method.start_with?('show_all_items_by_') 
-          attribute = method[18..-1] 
-          show_all_items_by(attribute) 
+        if method.to_s.start_with?('sort_by_') 
+          attribute = method.to_s[8..-1] 
+          sort_by(attribute) 
         else 
           super 
         end 
       end
 
       def respond_to_missing?(method_name, include_private = false) 
-        method_name.start_with?('show_all_items_by_') || super 
+        method_name.start_with?('sort_by_') || super 
       end 
       
       private 
       
-      def show_all_items_by(attribute)
+      def sort_by(attribute)
         if @items.first.respond_to?(attribute)
-          sorted_items = @items.sort_by(&attribute.method(:call))
-          sorted_items.each { |item| puts item }
+          sorted_items = @items.sort_by do |item| 
+            item.send(attribute)
+          end 
+          
+          sorted_items
         else
           puts "Attribute '#{attribute}' is missing in class 'Item'."
         end

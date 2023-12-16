@@ -16,7 +16,11 @@ module Yakovets_Tsyhanash
 
       items.each do |item|
         cart.add_item(item)
-        
+      end
+
+      sorted = cart.sort_by_price
+
+      sorted.each do |item|
         puts "Added to cart: #{item.title} by #{item.author}: #{item.price}"
       end
 
