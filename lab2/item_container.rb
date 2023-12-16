@@ -31,18 +31,6 @@ module Yakovets_Tsyhanash
       def delete_items
         @items = []
       end
-
-      def to_h
-        {
-          items: @items.map(&:to_h), 
-        }
-      end
-
-      def to_s
-        @items.each do |item|
-          puts item.to_s
-        end
-      end
       
       def method_missing(method, *arguments, &block) 
         if method.to_s.start_with?('sort_by_') 

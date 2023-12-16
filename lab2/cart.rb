@@ -24,7 +24,7 @@ module Yakovets_Tsyhanash
   
     def save_to_json(prefix)
       File.open("#{Config.data_path}/#{prefix}_items.json", "w") do |file|
-        file.puts JSON.pretty_generate(to_h)
+        file.puts JSON.pretty_generate(@items.map(&:to_h))
       end
     end
 
@@ -39,7 +39,7 @@ module Yakovets_Tsyhanash
 
     def save_to_yaml(prefix)
       File.open("#{Config.data_path}/#{prefix}_data.yaml", "w") do |file|
-        file.puts YAML.dump(to_h)
+        file.puts YAML.dump(@items.map(&:to_h))
       end 
     end
   end

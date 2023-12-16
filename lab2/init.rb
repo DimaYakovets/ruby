@@ -4,7 +4,7 @@ module Yakovets_Tsyhanash
 	Config.config do |program|
 		program.web_address = "https://www.yakaboo.ua/ua/knigi/hudozhestvennaja-literatura.html"
 		program.data_path = "#{__dir__}/data"
-		program.file_ext = [".csv", ".json"]
+		program.file_ext = [".csv", ".json", ".yaml", ".txt"]
 		program.condition = ->(item) { item.price < 1000 }
 		program.parse_item = /\d+/
 		program.validator = ->(index) { index < 10 }
