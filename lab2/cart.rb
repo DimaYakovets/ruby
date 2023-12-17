@@ -30,7 +30,7 @@ module Yakovets_Tsyhanash
 
     def save_to_csv(prefix)
       CSV.open("#{Config.data_path}/#{prefix}_items.csv", "w") do |csv|
-        csv << ["title", "author", "categories", "price", "image_url"] 
+        csv << @items.first.to_h.keys if @items.length > 0  
         @items.each do |item|
           csv << item.to_h.values
         end

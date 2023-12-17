@@ -12,8 +12,6 @@ module Yakovets_Tsyhanash
     def run
       threads = (1..3).map do | index |
         Thread.new do
-          Thread.current[:name] = "Task #{index}"
-
           puts "Task #{index} started"
 
           application = Yakovets_Tsyhanash::MainApplication.new

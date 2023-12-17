@@ -16,7 +16,6 @@ module Yakovets_Tsyhanash
     end
 
     module ClassMethods 
-    
     end 
     
     module InstanceMethods

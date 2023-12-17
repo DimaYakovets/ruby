@@ -8,9 +8,9 @@ module Yakovets_Tsyhanash
   class Parser
     def parse_items(page_number = 1)
       items = []
-      
-      self.login('', '')
 
+      login('yakovets.dima19@gmail.com', 'a.&jJ8iC3j8K&Mk')
+      
       url = "#{Config.web_address}#{page_number != 1 ? "?p=#{page_number}" : ""}"
 
       doc = Nokogiri::HTML(Faraday.get(url).body)
@@ -52,15 +52,15 @@ module Yakovets_Tsyhanash
       mechanize.user_agent_alias = 'Windows Edge'
       mechanize.log = Logger.new("mechanize.log")
       mechanize.log.level = Logger::INFO
-
-      page = mechanize.get(Config.web_address)
-
-      form = page.forms.first
-      form['login'] = username
+  
+      page = mechanize.get('https://bibleproject.com/account/login/')
+  
+      form = page.forms[1]
+      form['email'] = username
       form['password'] = password
-
+  
       logged_in_page = form.submit
-
+  
       return mechanize
     end
   end

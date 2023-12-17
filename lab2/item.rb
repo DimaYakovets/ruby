@@ -28,7 +28,11 @@ module Yakovets_Tsyhanash
     end
 
     def <=>(other)
-      title <=> other.title
+      if self.respond_to?(:title) && other.respond_to?(:title)
+        self.title <=> other.title
+      else
+        0
+      end
     end
   end
 end
